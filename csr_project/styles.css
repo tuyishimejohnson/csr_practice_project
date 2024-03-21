@@ -14,8 +14,8 @@ body {
 }
 
 .background {
-    filter: brightness(40%);
-    background-image: url('/images/giammarco-boscaro-zeH-ljawHtg-unsplash.jpg');
+    filter: brightness(30%);
+    background-image: url('/images/hero-img.png');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,18 +49,27 @@ body {
     color: white;
 }
 
+.get-intouch button {
+    color: rgb(41, 40, 40);
+    background-color: #D4AF73;
+    padding: 1.2em 3em;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
 .shape-1 img {
     position: absolute;
     top: 50%;
     right: 0;
-    width: 4%;
+    width: 5%;
 }
 
 .shape-2 img {
     position: absolute;
-    top: 90%;
+    top: 87%;
     right: 7em;
-    width: 4%;
+    width: 5%;
 }
 
 main, footer {
@@ -73,6 +82,24 @@ main, footer {
     top: 50%;
     width: 30%;
     color: aliceblue;
+}
+
+.introduction h1 {
+    color: #D4AF73;
+}
+
+.introduction p {
+    padding-top: 1.2em;
+    padding-bottom: 0.9em;
+}
+
+.introduction button {
+    background-color: #D4AF73;
+    padding: 1.2em 1.7em;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+
 }
 
 .image-1 {
@@ -99,6 +126,15 @@ main, footer {
     padding: 1.8em 0;
 }
 
+.learn-more button {
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 1.2em 1.7em;
+    margin-top: 2em;
+}
+
 #about-us {
     display: flex;
     width: 100%;
@@ -121,6 +157,20 @@ main, footer {
 .all-services {
     display: flex;
     gap: 1.2em;
+}
+
+.service-one, .service-three {
+    background-color: #d4b481;
+    padding: 1.2em 1.2em;
+}
+
+.service-one p, .service-three p, .service-four p, .service-two p {
+    padding-top: 0.6em;
+}
+
+.service-two, .service-four {
+    background-color: #c5b8c5;
+    padding: 1.2em 1.2em;
 }
 
 .sectors, .our-practice, .why-partners {
@@ -148,26 +198,35 @@ main, footer {
 .sector-1, .sector-2, .sector-3, .sector-4 {
     display: flex;
     gap: 0.4em;
-    margin: 2em 0;
+    margin: 1.3em 0;
 }
 
 .consumer, .energy, .financial, .infrastructure, .technology, .manufacture, .hotel, .media {
-    background-color:#D4AF73;
+    background-color:#dbbd8d;
+    padding: 0.7em 1.3em;
+    font-size: 13px;
+    border-radius: 2px;
 }
 
 .manufacture {
     width: 39%;
 }
 
+.practice p {
+    padding-bottom: 1.4em;
+}
 
 .practices-provided {
     display: flex;
-    gap: 2em;
+    gap: 0.4em;  
 }
 
 .practice-1, .practice-2, .practice-3, .practice-4, .practice-5, .practice-6, .practice-7, .practice-8, .practice-9 {
-    margin: 0.6em 0;
-    background-color: #D4AF73;
+    margin: 0.8em 0;
+    background-color: #dbbd8d;
+    padding: 0.7em 1.3em;
+    font-size: 13px;
+    border-radius: 2px;
 }
 
 .all-partners {
