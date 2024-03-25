@@ -36,6 +36,10 @@ body {
    
 }
 
+.menu-icon img {
+    display: none;
+}
+
 .list-items {
     display: flex;
     text-align: center;
@@ -196,11 +200,7 @@ main, footer {
     gap: 1.7em;
 }
 
-.our-practice {
-    padding: 0 7em;
-}
-
-.sectors {
+.our-practice, .sectors {
     padding: 0 7em;
 }
 
@@ -271,10 +271,13 @@ main, footer {
 }
 
 .another-bg {
-    background-image: url('images/cta\ image.png');
-    height: 100vh;
+    background-image: url('images/cta image.png');
     filter: brightness(20%);
+    height: 100vh;
     opacity: 0.8;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .experts {
@@ -294,15 +297,14 @@ main, footer {
 
 .the-content {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    top: 37%;
+    left: 37%;
+    transform: translateY(-37%);
+    transform: translateX(-37%);
     text-align: center;
     margin: auto;
     font-weight: 600;
-    font-size: 1.2em;
-    display: block;
+    font-size: 1.7em;
 }
 
 .shape-image {
@@ -428,4 +430,226 @@ main, footer {
     color: white;
     text-decoration: none;
     padding-right: 1.2em;
+}
+
+.header-responsive {
+    display: flex;
+}
+
+/* Part of responsive design */
+
+@media (max-width: 768px) {
+    .header-section {
+        padding: 0 2em;
+    }
+    .menu-icon img {
+        display: flex;
+    }
+
+    .get-intouch button, .list-items a, .shape-1 img {
+        display: none;
+    }
+
+    .introduction {
+        width: 100%;
+        text-align: center;
+        padding: 4em;
+    }
+
+    #about-us {
+        padding-top: 6em;
+        padding: 6em 0;
+    }
+
+    .shape-2 img {
+        width: 4em;
+        top: 87%;
+        left: 45%;
+    }
+
+    .image-1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .image-1 img {
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .learn-more {
+        position: absolute;
+        color: black;
+        margin-top: 60%;
+        background-color: white;
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 1px 1px 6px 1px rgb(131, 131, 131);
+        padding: 2em 2em;
+        text-align: center;
+    }
+
+    #services {
+        margin-top: 8em;
+    }
+
+    .image-3 img {
+        display: none;
+    }
+
+    .all-services {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2em;
+    }
+
+    .service-one, .service-two, .service-three, .service-four {
+        background-color: rgb(231, 228, 228);
+    }
+
+    .sector-1, .sector-2, .sector-3, .sector-4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .image-4 {
+        width: 100%;
+    }
+    
+    .image-4 img {
+        width: 100%;
+        position: relative;
+    }
+
+    .sectors {
+        padding: 0;
+    }
+
+    .all-sectors {
+        position: absolute; 
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        margin-top: 90%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 2em 1.3em;
+        box-shadow: 1px 1px 6px 1px rgb(131, 131, 131);
+    }
+
+    .manufacture {
+        width: 100%;
+    }
+
+    .practices-provided {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .practice-1, .practice-2, .practice-3, .practice-4, .practice-5, .practice-6, .practice-7, .practice-8, .practice-9 {
+        background-color: rgb(231, 228, 228);
+    }
+
+    .image-5 {
+        width: 100%;
+    }
+
+    .image-5 img {
+        position: relative;
+        width: 100%;
+    }
+
+    .our-practice {
+        padding: 0;
+    }
+
+    .practice {
+        position: absolute;
+        margin-top: 95%;
+        background-color: white;
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 1.3em;
+        padding-bottom: 2em;
+        box-shadow: 1px 1px 6px 1px rgb(131, 131, 131);
+    }
+
+    .another-image img {
+        display: none; 
+    }
+
+    .why-partners {
+        margin-top:48em;
+        padding: 0;
+    }
+
+    .image-6 {
+        width: 100%;
+        position: relative;
+        
+    }
+
+    .image-6 img {
+        width: 100%;
+        
+    }
+
+    .partners {
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        top: 50%;
+    }
+
+
+
+
+    .footer-content {
+        padding: 0 3em;
+        width: 100%;
+    }
+
+    .contact-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .contacts-there {
+        width: 100%;
+    }
+    .contact-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+
+    .inputs {
+        width: 100%;
+    }
+
+    .contact-information {
+        padding: 2em;
+    }
+
+    .names {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.2em;
+    }
+
+    .inputs button {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
 }
